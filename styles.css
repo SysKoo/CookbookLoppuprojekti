@@ -1,0 +1,82 @@
+/* site color palette*/
+:root {
+    --plum: #5e0e59;
+    --mauve: #94437a;
+    --rose: #c78197;
+    --beige-pink: #d6aba0;
+    --cream: #fce9d7;
+}
+
+/* homebage style beginning */
+
+body {
+    background-color: var(--cream);
+}
+
+.my-navbar {
+    background-color: var(--plum);
+}
+
+.my-nav-text {
+    color: white;
+}
+
+.my-navbar .navbar-nav {
+  margin-left: 2rem;
+    gap: 1.5rem;
+}
+
+.about, .recipes {
+    padding-left: 1rem;
+}
+
+
+.spoonbox {
+    display: flex;
+    align-items: flex-start;
+    background-color: var(--rose);
+    padding: 10px;
+    align-items:center;
+    gap: 1rem;
+}
+
+.spoon-img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 2rem;
+}
+
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card {
+    justify-items: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.card:hover {
+    background-color: var(--rose);
+    transition: 0,5s ease
+}
+
+.card-img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.footer {
+    background-color: var(--plum);
+    color: white;
+}
+
+/* recipe pages style beginning */
