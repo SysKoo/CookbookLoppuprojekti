@@ -7,11 +7,12 @@
     --cream: #fce9d7;
 }
 
-/* homebage style beginning */
+/** base styling + nav + footer **/
 
 body {
     background-color: var(--cream);
 }
+
 
 .my-navbar {
     background-color: var(--plum);
@@ -26,12 +27,30 @@ body {
     gap: 1.5rem;
 }
 
+
+.footer {
+    background-color: var(--plum);
+    color: white;
+}
+
+
+/** homepage specific styling **/
+
 .about, .recipes {
     padding-left: 1rem;
 }
 
+.about {
+    padding: 1rem;
+    justify-items: center;
+}
+
+
 
 .spoonbox {
+    max-width: 96%;
+    margin: 0 auto;
+    border-radius: 35px;
     display: flex;
     align-items: flex-start;
     background-color: var(--rose);
@@ -46,6 +65,12 @@ body {
     border-radius: 2rem;
 }
 
+
+.recipes {
+    padding: 1rem;
+    justify-items: center;
+    text-align: center;
+}
 
 .recipe-grid {
     display: grid;
@@ -74,9 +99,4 @@ body {
 }
 
 
-.footer {
-    background-color: var(--plum);
-    color: white;
-}
-
-/* recipe pages style beginning */
+/* recipe page specific styling */

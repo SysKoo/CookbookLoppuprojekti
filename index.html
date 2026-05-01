@@ -11,42 +11,29 @@
 <body>
 
     <header>
-      <nav class="navbar navbar-expand-lg my-navbar">
-    <div class="container-fluid">
-    <a class="navbar-brand my-nav-text" href="#">Navbar
-        <!--img for logo here, delete navbar text above-->
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg my-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand my-nav-text" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link my-nav-text" href="#">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle my-nav-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Recipes
-          </a>
-          <ul class="dropdown-menu my-nav-text">
-            <li><a class="dropdown-item" href="#">Dinners</a></li>
-            <li><a class="dropdown-item" href="#">Desserts</a></li>
-            <li><a class="dropdown-item" href="#">Snacks</a></li>
-            <li><a class="dropdown-item" href="#">Cocktails</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link my-nav-text" href="#">Contact</a>
-        </li>
-      </ul>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link my-nav-text" href="./index.html">HOME</a>
+        <a class="nav-link my-nav-text" href="./dinners.html">DINNERS</a>
+        <a class="nav-link my-nav-text" href="./desserts.html">DESSERTS</a>
+        <a class="nav-link my-nav-text" href="./cocktails.html">COCKTAILS</a>
+        <a class="nav-link my-nav-text" href="./snacks.html">SNACKS</a>
+        <a class="nav-link my-nav-text" href="#">CONTACT</a>
+      </div>
     </div>
-   </div>
-  </nav>
+  </div>
+</nav>
   </header>
 
 <main>
 <section id="about" class="about">
-<h1>About</h1>
+<h1 class="sitename" style="padding-top: 1rem;">A Spoonful Of Home</h1>
 <p> about paragraph </p>
 </section>
 
@@ -57,11 +44,12 @@
     
     <div>
       <h2>Spoonometer</h2>
-      <p>Based on the popular 
+      <p style="max-width: 80%; word-wrap: normal;">Based on the popular 
         "<a href="https://en.wikipedia.org/wiki/Spoon_theory" target="_blank">spoon theory</a>", 
         the spoonometer tells you how much effort a recipe will take.
         Every recipe gets a score between 1-3 spoons based on the amount of 
-        time, steps, tools and mental energy they require. <br>
+        time, steps, tools and mental energy they require, which will help you plan meals 
+        with your energy levels in mind! <br>
     <ul> 
         <li>1/3 spoons is quick and easy.</li>
         <li>3/3 spoons will take a considerable bit of time and effort.</li>
@@ -73,7 +61,7 @@
 
 <section id="recipes" class="recipes">
 <h1>Recipes</h1>
-<p>I've organised my recipes into four different categories ranging from dinners that will feed one person for days 
+<p style="max-width: 70%; word-wrap: normal;">I've organised my recipes into four different categories ranging from dinners that will feed one person for days 
   and desserts to top them off, to cocktails and snacks perfect for a nice night-in.
   Just click a card and get cooking!</p>
 
