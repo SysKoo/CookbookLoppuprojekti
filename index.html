@@ -6,14 +6,17 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <!-- font 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
+<header>
 <nav class="navbar navbar-expand-lg my-navbar">
   <div class="container-fluid">
-    <a class="navbar-brand my-nav-text" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -31,10 +34,20 @@
 </nav>
   </header>
 
-<main>
+<div class="layout">
+
+<!-- MAIN AREA -->
+
+<main class="main-content">
 <section id="about" class="about">
-<h1 class="sitename" style="padding-top: 1rem;">A Spoonful Of Home</h1>
-<p> about paragraph </p>
+<h1 class="sitename"><small>⋆˙˖✧  </small>A Spoonful Of Home<small>  ✧˖˙⋆</small></h1>
+<p style="max-width: 90%; word-wrap: normal;">Welcome to A Spoonful Of Home, the simple home cooked recipe collection aimed to help those 
+  in need of some extra inspiration for cooking without blowing up the spoon drawer!
+  All of my recipes are thoroughly tested and the instructions are made clear enough 
+  to not leave you second guessing yourself. <br><br>
+ <i> * To my dearest best friend who inspired me to make this: 
+  I will not have you eating out of the oven (or, god forbid, the microwave) any longer!</i>
+</p>
 </section>
 
 <section id="spoonometer">
@@ -51,17 +64,19 @@
         time, steps, tools and mental energy they require, which will help you plan meals 
         with your energy levels in mind! <br>
     <ul> 
-        <li>1/3 spoons is quick and easy.</li>
-        <li>3/3 spoons will take a considerable bit of time and effort.</li>
-        <li>2/3 is a nice in-between.</li>
+        <li><strong>1/3</strong> spoons is quick and easy.</li>
+        <li><strong>3/3</strong> spoons will take a considerable bit of time and effort.</li>
+        <li><strong>2/3</strong> is a nice in-between.</li>
     </ul>
     </p></div>
 </div>
 </section>
 
+<br><hr style="color:#c78197; opacity: 100%; margin-left: 1rem;">
+
 <section id="recipes" class="recipes">
-<h1>Recipes</h1>
-<p style="max-width: 70%; word-wrap: normal;">I've organised my recipes into four different categories ranging from dinners that will feed one person for days 
+<h1 style="padding-top: 1rem;"><small>⋆˙˖✧  </small>Recipes<small>  ✧˖˙⋆</small></h1>
+<p style="max-width: 90%; word-wrap: normal;">I've organised my recipes into four different categories ranging from dinners that will feed one person for days 
   and desserts to top them off, to cocktails and snacks perfect for a nice night-in.
   Just click a card and get cooking!</p>
 
@@ -85,8 +100,38 @@
 </div>
 </section>
 <br>
-
 </main>
+
+<!-- SIDE AREA -->
+
+<aside class="sidebar">
+  
+<section id="meetme">
+<h2>Meet the ...</h2>
+<p>Hi! I'm Syksy </p>
+</section>
+
+<hr style="color:#c78197; opacity: 100%;">
+
+<section id="seasonal">
+<h2>Seasonal picks</h2>
+<p>
+These special picks from each category are perfect for the warm summer days ahead!
+<ul>
+  <li>The <strong>Chorizo wok</strong> might be a little spicy at first, but the 
+  colorful vegetables are sure to put you in a nice, sunny mood!</li> <br>
+  <li>The <strong>Cheesecake</strong> is a perfect no-bake dessert that keeps both
+  you and your oven cool!</li> <br>
+  <li>The <strong>Screwdriver</strong> has always been my summer go-to drink.
+  Not only is it quick and easy to make, it frenshens you up like no other!</li>
+</ul>
+</p>
+
+
+</section>
+</aside>
+
+</div>
 
 <footer class="footer">...</footer>
 
