@@ -13,13 +13,13 @@ body {
     background-color: var(--cream);
 }
 
-.layout {
+.layout, .recipe-layout {
     display: flex;
     gap: 2rem;
     align-items: flex-start;
 }
 
-.main-content {
+.main-content, .recipe-main-content {
     flex: 70%;
 }
 
@@ -32,6 +32,12 @@ body {
     border-left: 1px solid var(--rose);
 }
 
+.recipe-sidebar {
+    flex: 30%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-left: 1px solid var(--rose);
+}
 
 h1 {
     padding-top: 2rem;
@@ -47,7 +53,7 @@ h1, h2 {
     font-weight: 400;
 }
 
-p, ul, h3 {
+p, ul, ol, h3, h4 {
     font-family: "Monaco", monospace;
 }
 
@@ -140,12 +146,25 @@ p, ul, h3 {
 
 .collapsible {
     background-color: var(--rose);
+}
 
+.btn-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .content {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-out;
-
+    margin-top: 1rem;
 }
+
+.recipe-intro {
+    max-width: 60%;
+    margin: 0 auto;
+    justify-items: center;
+    text-align: center;
+}
+
