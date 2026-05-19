@@ -76,8 +76,13 @@ p, ul, ol, h3, h4 {
 .footer {
     background-color: var(--plum);
     color: white;
+    padding: 1rem;
 }
 
+hr {
+    color:#c78197; 
+    opacity: 100%;
+}
 
 /** homepage specific styling **/
 
@@ -120,6 +125,7 @@ p, ul, ol, h3, h4 {
     grid-gap: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
+    padding-left: 2rem;
     padding-bottom: 1rem;
 }
 
@@ -143,6 +149,29 @@ p, ul, ol, h3, h4 {
 
 /* recipe page specific styling */
 
+.recipeabout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2rem;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.comingsoon {
+    max-width: 70%;
+    margin: 0 auto;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--rose);
+    padding: 10px;
+    align-items:center;
+    gap: 1rem;
+    text-align: center;
+}
 
 .collapsible {
     background-color: var(--rose);
@@ -159,6 +188,7 @@ p, ul, ol, h3, h4 {
     overflow: hidden;
     transition: max-height 0.5s ease-out;
     margin-top: 1rem;
+    padding-left: 1rem;
 }
 
 .recipe-intro {
@@ -168,3 +198,7 @@ p, ul, ol, h3, h4 {
     text-align: center;
 }
 
+.exampleimg {
+    max-width: 70%;
+    height: auto;
+}
