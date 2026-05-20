@@ -58,6 +58,12 @@ h1, h2 {
     font-size: 1.5rem;
 }
 
+.h2small-card {
+    font-family: "Monaco", monospace;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
 p, ul, ol {
     font-family: "Monaco", monospace;
 }
@@ -79,9 +85,17 @@ hr {
     font-family: "Monaco", monospace;
 }
 
+.nav-link:hover {
+    color: var(--rose)
+}
+
 .my-navbar .navbar-nav {
   margin-left: 2rem;
     gap: 1.5rem;
+}
+
+.navbar-toggler-icon {
+  filter: invert(100%);
 }
 
 
@@ -143,6 +157,13 @@ hr {
     border-radius: 2rem;
 }
 
+.spoonlink {
+    color: var(--plum)
+}
+
+.spoonlink:hover {
+    color: var(--mauve)
+}
 
 .recipes {
     padding: 1rem;
@@ -165,6 +186,7 @@ hr {
     justify-items: center;
     align-items: center;
     border-radius: 10px;
+    text-decoration: none;
 }
 
 .card:hover {
@@ -206,6 +228,11 @@ hr {
 
 .collapsible {
     background-color: var(--rose);
+    transition: background-color 0.5s ease;
+}
+
+.collapsible:hover {
+    background-color: var(--mauve);
 }
 
 .btn-div {
