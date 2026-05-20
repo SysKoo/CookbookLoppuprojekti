@@ -39,7 +39,7 @@
 
 <main class="main-content">
 <section id="about" class="about">
-<h1 class="sitename"><small>⋆˙˖✧  </small>A Spoonful Of Home<small>  ✧˖˙⋆</small></h1>
+<h1 class="sitename"><span class="flourish"><small>⋆˙˖✧  </small></span>A Spoonful Of Home<span class="flourish"><small>  ✧˖˙⋆</small></span></h1>
 <p style="max-width: 90%; word-wrap: normal;">Welcome to A Spoonful Of Home, the simple home cooked recipe collection aimed to help those 
   in need of some extra inspiration for cooking without blowing up the spoon drawer!
   All of my recipes are thoroughly tested and the instructions are made clear enough 
@@ -56,18 +56,18 @@
     
     <div>
       <h2>Spoonometer</h2>
-      <p style="max-width: 80%; word-wrap: normal;">Based on the popular 
+      <p>Based on the popular 
         "<a href="https://en.wikipedia.org/wiki/Spoon_theory" target="_blank">spoon theory</a>", 
         the spoonometer tells you how much effort a recipe will take.
         Every recipe gets a score between 1-3 spoons based on the amount of 
         time, steps, tools and mental energy they require, which will help you plan meals 
-        with your energy levels in mind! <br>
+        with your energy levels in mind!</p> 
     <ul> 
         <li><strong>1/3</strong> spoons is quick and easy.</li>
-        <li><strong>3/3</strong> spoons will take a considerable bit of time and effort.</li>
         <li><strong>2/3</strong> is a nice in-between.</li>
+        <li><strong>3/3</strong> spoons will take a considerable bit of time and effort.</li>
     </ul>
-    </p></div>
+    </div>
 </div>
 </section>
 
@@ -81,19 +81,19 @@
 
 <div class="recipe-grid">
   <div class="card">
-  <h3>DINNERS</h3>
+  <h2 class="h2small">DINNERS</h2>
     <img src="./images/pastaplate.jpg" alt="close up image of pasta in bowl" class="card-img">
   </div>
   <div class="card">
-  <h3>DESSERTS</h3>
+  <h2 class="h2small">DESSERTS</h2>
     <img src="./images/cheesecake.jpg" alt="image of a slice of cheesecake" class="card-img">
   </div>
   <div class="card">
-  <h3>COCKTAILS</h3>
+  <h2 class="h2small">COCKTAILS</h2>
     <img src="./images/berrydrink.jpg" alt="image of a glass of bubbling drink with raspberries, ice and a straw" class="card-img">
   </div>
   <div class="card">
-  <h3>SNACKS</h3>
+  <h2 class="h2small">SNACKS</h2>
     <img src="./images/berryoats.jpg" alt="image of a bowl of oat porridge topped with berries" class="card-img">
   </div>
 </div>
@@ -116,16 +116,16 @@
 <section id="seasonal">
 <h2>Seasonal picks</h2>
 <p>
-These special picks from each category are perfect for the warm summer days ahead!
+These special picks from each category are perfect for the warm summer days ahead! </p>
 <ul>
-  <li>The <strong>Chorizo wok</strong> might be a little spicy at first, but if you
-  can handle the heat it's sure to make for a perfect on-theme dinner with a colorful summer vibe!</li> <br>
-  <li>The <strong>White chocolate & raspberry cheesecake</strong> is a perfect, summery no-bake dessert that keeps both
-  you and your oven cool! Serve and impress guests or refridgerate to save for days.</li> <br>
+  <li style="margin-bottom: 1rem;">The <strong>Chorizo wok</strong> might be a little spicy at first, but if you
+  can handle the heat it's sure to make for a perfect on-theme dinner with a colorful summer vibe!</li>
+  <li style="margin-bottom: 1rem;">The <strong>White chocolate & raspberry cheesecake</strong> is a perfect, summery no-bake dessert that keeps both
+  you and your oven cool! Serve and impress guests or refridgerate to save for days.</li>
   <li>The <strong>Screwdriver</strong> has always been my summer go-to drink.
   Not only is it quick and easy to make, it frenshens you up like no other!</li>
 </ul>
-</p>
+
 
 </section>
 </aside>
@@ -133,9 +133,29 @@ These special picks from each category are perfect for the warm summer days ahea
 </div>
 
 <footer class="footer">
+
+<div class="footer-left">
 <p>Author: Syksy Kokkonen <br>
   &copy; 2026 Copyright reserved. <br>
 <strong>Contact:</strong> syksy.kokkonen@gmail.com </p>
+</div>
+
+<div class="footer-right">
+  <p><strong>Suggest a new recipe here:</strong></p>
+  <form
+  action="https://formspree.io/f/xkoeozbv"
+  method="POST"
+>
+  <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+  <label for="suggestion">Suggestion:</label>
+    <textarea id="suggestion" name="suggestion"></textarea>
+  
+  <button type="submit">Send</button>
+</form>
+</div>
+
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> 

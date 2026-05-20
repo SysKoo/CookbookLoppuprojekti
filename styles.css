@@ -7,7 +7,7 @@
     --cream: #fce9d7;
 }
 
-/** base styling + nav + footer **/
+/* BASE STYLING */
 
 body {
     background-color: var(--cream);
@@ -53,10 +53,22 @@ h1, h2 {
     font-weight: 400;
 }
 
-p, ul, ol, h3, h4 {
+.h2small {
+    font-family: "Monaco", monospace;
+    font-size: 1.5rem;
+}
+
+p, ul, ol {
     font-family: "Monaco", monospace;
 }
 
+hr {
+    color:#c78197; 
+    opacity: 100%;
+}
+
+
+/* NAVBAR + FOOTER */
 
 .my-navbar {
     background-color: var(--plum);
@@ -77,14 +89,29 @@ p, ul, ol, h3, h4 {
     background-color: var(--plum);
     color: white;
     padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
 }
 
-hr {
-    color:#c78197; 
-    opacity: 100%;
+.footer-left {
+    flex: 1;
 }
 
-/** homepage specific styling **/
+.footer-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-right label, .footer-right button {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* HOMEPAGE SPECIFIC */
 
 .about {
     padding: 1rem;
@@ -103,6 +130,11 @@ hr {
     padding: 10px;
     align-items:center;
     gap: 1rem;
+}
+
+.spoonbox p {
+    max-width: 80%; 
+    word-wrap: normal;
 }
 
 .spoon-img {
@@ -137,7 +169,7 @@ hr {
 
 .card:hover {
     background-color: var(--rose);
-    transition: 0,5s ease
+    transition: 0.5s ease;
 }
 
 .card-img {
@@ -146,8 +178,7 @@ hr {
 }
 
 
-
-/* recipe page specific styling */
+/* RECIPE PAGE SPECIFIC */
 
 .recipeabout {
     display: flex;
@@ -201,4 +232,131 @@ hr {
 .exampleimg {
     max-width: 70%;
     height: auto;
+}
+
+
+/* MEDIA QUERIES */
+
+/* phone homepage */
+
+@media (max-width: 576px) {
+.spoon-img {
+    display: none;
+}
+
+.spoonbox {
+    text-align: center;
+}
+
+.spoonbox p {
+    max-width: 100%;
+}
+
+.spoonbox ul {
+    display: inline-block;
+    text-align: left;
+}
+
+.sidebar {
+    display: none;
+}
+
+.recipe-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    max-width: 90%;
+    height: auto;
+}
+
+.footer {
+    flex-direction: column;
+}
+
+}
+
+/* phone recipe pages */
+
+@media (max-width: 576px) {
+.recipe-layout {
+    flex-direction: column;
+}
+
+ .recipe-main-content, .recipe-sidebar {
+    width: 90%;
+}
+
+.recipeabout, .comingsoon, .recipe-intro {
+    max-width: 85%;
+}
+
+.recipe-sidebar {
+    border-left: none;
+    padding-left: 0;
+}
+
+.exampleimg {
+    max-width: 85%;
+    height: auto;
+}
+
+}
+
+
+/* tablet homepage */
+
+@media (max-width: 900px) and (min-width: 577px) {
+.spoon-img {
+    display: none;
+}
+
+.spoonbox {
+    text-align: center;
+}
+
+.spoonbox p {
+    max-width: 100%;
+}
+
+.spoonbox ul {
+    display: inline-block;
+    text-align: left;
+}
+
+.sidebar {
+    display: none;
+}
+}
+
+/* tablet recipe pages */
+
+@media (max-width: 900px) and (min-width: 577px) {
+ .recipe-layout {
+    flex-direction: column;
+    }
+
+.recipe-main-content, .recipe-sidebar {
+    width: 90%;
+    }
+
+.recipeabout, .comingsoon {
+    width: 100%
+}
+
+.recipe-sidebar {
+    border-left: none;
+    padding-left: 0;
+    }
+}
+
+
+/* specific header flourish that breaks on some phone sizes */
+
+@media (max-width: 390px) {
+    .flourish {
+        display: none;
+    }
 }
